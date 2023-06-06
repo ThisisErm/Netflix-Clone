@@ -8,3 +8,8 @@ header {
     background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.05)), url('../img/banner.jpg');
     height: 100vh;
 }
+
+img {
+    width: 167px;
+    height: 45px;
+}
