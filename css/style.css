@@ -135,3 +135,17 @@ color:#fff;
 .size-80 {
     width: 80%;
 }
+
+#features nav a.is-selected {
+    border-bottom: 5px solid #e50914;
+    color: #fff;
+}
+
+#features article section {
+    display: none;
+    padding: 40px 0;
+}
+
+#features article section.is-selected {
+    display: block;
+}
