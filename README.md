@@ -22,8 +22,8 @@ This is what the app looks like:
 ### homepage
 ![alt main](img/preview.PNG "1")
 ### features
-![alt index](img/feature2.PNG"2")
-![alt index](img/feature3.PNG"3")
+![alt index](img/feature2.PNG "2")
+![alt index](img/feature3.PNG "3")
 
 
 ## V2 User Stories
