@@ -1,248 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erm's Netflix Clone</title>
-</head>
-<link href="css/style.css" rel="stylesheet" />
-<link href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css rel="stylesheet">
+  </head>
+  <link href="css/style.css" rel="stylesheet" />
+  <link
+  href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+  rel="stylesheet">
 
-<body>
+  <body>
     <header>
-        <nav>
-            <a class="logo" href="#">
-                <img src="img/logo.svg">
-            </a>
-            <a class="signin" href="#">
-                Sign In
-            </a>
-        </nav>
+      <nav>
+        <a class="logo" href="https://github.com/ThisisErm/Netflix-Clone">
+          <img src="img/logo.svg" />
+        </a>
+        <a
+          class="signin"
+          href="https://www.netflix.com/Login?nextpage=https%3A%2F%2Fhelp.netflix.com%2Fnode%2F24926"
+        >
+          Sign In
+        </a>
+      </nav>
 
-        <section class="pitch">
-            <h1 class="pitch__title">See what's next</h1>
-            <p class="pitch__subtitle"> WATCH ANYWHERE. CANCEL ANYTIME</p>
-            <button class="btn"> JOIN FREE FOR A MONTH</button>
-        </section>
+      <section class="pitch">
+        <h1 class="pitch__title">See what's next</h1>
+        <p class="pitch__subtitle">WATCH ANYWHERE. CANCEL ANYTIME</p>
+        <button
+          onclick="window.location.href='https://www.netflix.com/signup'"
+          class="btn btn-large column is-narrow"
+        >
+          JOIN FOR A FREE MONTH
+        </button>
+      </section>
     </header>
 
     <!------------------------------------------------------------------------------- FEATURES------------------------------------------------------------------------------------>
 
     <div id="features">
-        <nav>
-            <div class="center columns size-80">
-                <a href="#" class="column is-selected" data-id="cancelanytime">
-                    <img alt="Cancel Anytime" src="img/cancel.svg" />
-                    <h2>
-                        No commitments
-                        <br />
-                        Cancel online at anytime
-                    </h2>
-                </a>
+      <nav>
+        <div class="center columns size-80">
+          <a href="#" class="column is-selected" data-id="cancelanytime">
+            <img alt="Cancel Anytime" src="img/cancel.svg" />
+            <h2>
+              No commitments
+              <br />
+              Cancel online at anytime
+            </h2>
+          </a>
 
-                <a href="#" class="column" data-id="watchanywhere">
-                    <img alt="Watch anywhere" src="img/watchanywhere.svg" />
-                    <h2>
-                        Watch anywhere
-                    </h2>
-                </a>
+          <a href="#" class="column" data-id="watchanywhere">
+            <img alt="Watch anywhere" src="img/watchanywhere.svg" />
+            <h2>Watch anywhere</h2>
+          </a>
 
-                <a href="#" class="column" data-id="pickprice">
-                    <img alt="Pick your price" src="img/pickprice.svg" />
-                    <h2>
-                        Pick your price
-                    </h2>
-                </a>
+          <a href="#" class="column" data-id="pickprice">
+            <img alt="Pick your price" src="img/pickprice.svg" />
+            <h2>Pick your price</h2>
+          </a>
+        </div>
+      </nav>
+
+      <article>
+        <!-- FEATURE 1 -->
+
+        <section class="is-selected center size-70" data-id="cancelanytime">
+          <div class="columns">
+            <div class="column">
+              <h2>
+                If you decide Netflix isn't for you - no problem. Cancel
+                anytime.
+              </h2>
+              <button
+                onclick="window.location.href='https://www.netflix.com/signup'"
+                class="btn btn-large column is-narrow"
+              >
+                JOIN FOR A FREE MONTH
+              </button>
             </div>
-            </nav>
+            <div class="column">
+              <img src="img/cancelanytime_withdevice.png" />
+            </div>
+          </div>
+        </section>
 
-            <article>
+        <!-- FEATURE 2 -->
 
-                <!-- FEATURE 1 -->
+        <section
+          class="center size-80"
+          id="watchanywhere"
+          data-id="watchanywhere"
+        >
+          <div class="columns">
+            <h2 class="column">
+              Watch TV Shows and movies anytime, anywhere - Personalized for
+              you.
+            </h2>
+            <button
+              onclick="window.location.href='https://www.netflix.com/signup'"
+              class="btn btn-large column is-narrow"
+            >
+              JOIN FOR A FREE MONTH
+            </button>
+          </div>
 
-                <section class="is-selected center size-70" data-id="cancelanytime">
-                    <div class="columns">
-                        <div class="column">
-                            <h2>
-                                If you decide Netflix isn't for you - no problem. Cancel anytime.
-                            </h2>
-                            <button class="btn btn-large"> JOIN FOR A FREE MONTH</button>
-                        </div>
-                        <div class="column">
-                            <img src="img/cancelanytime_withdevice.png">
-                        </div>
-                    </div>
-                </section>
+          <div class="columns size-90 center">
+            <div class="column text-center">
+              <img src="img/asset_TV_UI.png" />
+              <h3>Watch on your TV</h3>
+              <p>Smart TVs, PlayStation, Xbox, Chromecast, Apple TV.</p>
+            </div>
 
-                <!-- FEATURE 2 -->
+            <div class="colum text-center">
+              <img src="img/asset_mobile_tablet_UI_2.png" />
+              <h3>Watch instantly of download for later</h3>
+              <p>Available on phone and tablet, wherever you go.</p>
+            </div>
 
+            <div class="column text-center">
+              <img src="img/asset_website_UI.png" />
+              <h3>Use any computer</h3>
+              <p>Watch right on Netflix.com.</p>
+            </div>
+          </div>
+        </section>
 
-                <section class="center size-80" id="watchanywhere" data-id="watchanywhere">
-                    <div class="columns">
-                        <H2 class="column">
-                            Watch TV Shows and movies anytime, anywhere - Personalized for you.
-                        </h2>
-                        <button class="btn btn-large column is-narrow"> JOIN FOR A FREE MONTH</button>
-                    </div>
+        <!-- FEATURE 3 -->
 
-                    <div class="columns size-90 center">
-                        <div class="column text-center">
-                            <img src="img/asset_TV_UI.png" />
-                            <h3>Watch on your TV</h3>
-                            <p>Smart TVs, PlayStation, Xbox, Chromecast, Apple TV.</p>
-                        </div>
+        <section data-id="pickprice" class="center size-70" id="pickprice">
+          <div class="text-center">
+            <h2>Choose one plan and watch everything on Netflix.</h2>
+            <button
+              onclick="window.location.href='https://www.netflix.com/signup'"
+              class="btn btn-large column is-narrow"
+            >
+              JOIN FOR A FREE MONTH
+            </button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>Basic</th>
+                <th>Standard</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly price after free month ends on 7/27/2023</td>
+                <td>$6.99</td>
+                <td>$15.49</td>
+                <td>$19.99</td>
+              </tr>
 
-                        <div class="colum  text-center">
-                            <img src="img/asset_mobile_tablet_UI_2.png" />
-                            <h3>Watch instantly of download for later</h3>
-                            <p>Available on phone and tablet, wherever you go.</p>
-                        </div>
+              <tr>
+                <td>HD available</td>
+                <td><i class="fa fa-times"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
 
-                        <div class="column text-center">
-                            <img src="img/asset_website_UI.png" />
-                            <h3>Use any computer</h3>
-                            <p>Watch right on Netflix.com.</p>
-                        </div>
-                    </div>
-                </section>
+              <tr>
+                <td>Ultra HD available</td>
+                <td><i class="fa fa-times"></i></td>
+                <td><i class="fa fa-times"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
 
-                <!-- FEATURE 3 -->
+              <tr>
+                <td>Screens you can watch on at the same time</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+              </tr>
 
+              <tr>
+                <td>Watch on your laptop, TV, phone and tablet</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Unlimited movies and TV shows</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>Cancel anytime</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+              <tr>
+                <td>First month free</td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+                <td><i class="fa fa-check"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </div>
 
-                <section data-id="pickprice" class="center size-70" id="pickprice">
-                    <div class="text-center">
-                        <h2>
-                            Choose one plan and watch everything on Netflix.
-                        </h2>
-                        <button class="btn btn-large"> JOIN FOR A FREE MONTH</button>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Basic</th>
-                                <th>Standard</th>
-                                <th>Premium</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monthly price after free month ends on 7/27/2023</td>
-                                <td>$6.99</td>
-                                <td>$15.49</td>
-                                <td>$19.99</td>
-                            </tr>
-
-                            <tr>
-                                <td>HD available</td>
-                                <td><i class="fa fa-times"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                            </tr>
-
-                            <tr>
-                                <td>Ultra HD available</td>
-                                <td><i class="fa fa-times"></i></td>
-                                <td><i class="fa fa-times"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                            </tr>
-
-                            <tr>
-                                <td>Screens you can watch on at the same time</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>4</td>
-                            </tr>
-
-                            <tr>
-                                <td>Watch on your laptop, TV, phone and tablet</td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Unlimited movies and TV shows</td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>Cancel anytime</td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                            </tr>
-                            <tr>
-                                <td>First month free</td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                                <td><i class="fa fa-check"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-       </section>
-    </article>
-</div>
-
-<footer class="center size-90">
-    <p>
-        Questions? Call <a href="tel: 1 (844) 505-2993">(844) 505-2993</a>
-    </p>
-    <ul class="columns flex-wrap">
-    
+    <footer class="center size-90">
+      <p>Questions? Call <a href="tel: 1 (844) 505-2993">(844) 505-2993</a></p>
+      <ul class="columns flex-wrap">
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">FAQ</a> 
+          <a href="https://thisiserm.com/#contact">FAQ</a>
         </li>
         <li class="column is-25">
-            <a href="https://netflix.com/youraccount">Account</a> 
+          <a href="https://netflix.com/youraccount">Account</a>
         </li>
         <li class="column is-25">
-            <a href="https://media.netflix.com">Media</a> 
+          <a href="https://media.netflix.com">Media</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Help Center</a> 
+          <a href="https://thisiserm.com/#contact">Help Center</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Investor Relations</a> 
+          <a href="https://thisiserm.com/#contact">Investor Relations</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Jobs</a> 
+          <a href="https://thisiserm.com/#contact">Jobs</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Gift Cards</a> 
+          <a href="https://thisiserm.com/#contact">Gift Cards</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Ways to Watch</a> 
+          <a href="https://thisiserm.com/#contact">Ways to Watch</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Terms of Use</a> 
+          <a href="https://thisiserm.com/#contact">Terms of Use</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Privacy</a> 
+          <a href="https://thisiserm.com/#contact">Privacy</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Cookie Preferences</a> 
+          <a href="https://thisiserm.com/#contact">Cookie Preferences</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Speed Test</a> 
+          <a href="https://thisiserm.com/#contact">Speed Test</a>
         </li>
         <li class="column is-25">
-            <a href="https://thisiserm.com/#contact">Netflix Originals</a> 
+          <a href="https://thisiserm.com/#contact">Netflix Originals</a>
         </li>
-    </ul>
-
-</footer>
-
-
+      </ul>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="js/app.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>
